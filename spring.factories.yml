@@ -1,0 +1,60 @@
+# PropertySource Loaders
+'@tspring/boot:PropertySourceLoader':
+  - '@tspring/boot:PropertiesPropertySourceLoader'
+  - '@tspring/boot:YamlPropertySourceLoader'
+
+# Run Listeners
+'@tspring/boot:SpringApplicationRunListener':
+  - '@tspring/boot:EventPublishingRunListener'
+
+# Error Reporters
+# '@tspring/boot:SpringBootExceptionReporter':
+#   - '@tspring/boot:FailureAnalyzers'
+
+# Application Context Initializers
+# '@tspring/context:ApplicationContextInitializer':
+#   - '@tspring/boot:ConfigurationWarningsApplicationContextInitializer'
+#   - '@tspring/boot:ContextIdApplicationContextInitializer'
+#   - '@tspring/boot:DelegatingApplicationContextInitializer'
+#   - '@tspring/boot:RSocketPortInfoApplicationContextInitializer'
+#   - '@tspring/boot:ServerPortInfoApplicationContextInitializer'
+
+# Application Listeners
+'@tspring/context:ApplicationListener':
+  # - '@tspring/boot:ClearCachesApplicationListener'
+  # - '@tspring/boot:ParentContextCloserApplicationListener'
+  # - '@tspring/boot:FileEncodingApplicationListener'
+  # - '@tspring/boot:AnsiOutputApplicationListener'
+  - '@tspring/boot:ConfigFileApplicationListener'
+  # - '@tspring/boot:DelegatingApplicationListener'
+  # - '@tspring/boot:ClasspathLoggingApplicationListener'
+  # - '@tspring/boot:LoggingApplicationListener'
+  # - '@tspring/boot:LiquibaseServiceLocatorApplicationListener'
+
+# Environment Post Processors
+# '@tspring/boot:EnvironmentPostProcessor':
+#   - '@tspring/boot:CloudFoundryVcapEnvironmentPostProcessor'
+#   - '@tspring/boot:SpringApplicationJsonEnvironmentPostProcessor'
+#   - '@tspring/boot:SystemEnvironmentPropertySourceEnvironmentPostProcessor'
+#   - '@tspring/boot:DebugAgentEnvironmentPostProcessor'
+
+# Failure Analyzers
+# '@tspring/boot:FailureAnalyzer':
+#   - '@tspring/boot:BeanCurrentlyInCreationFailureAnalyzer'
+#   - '@tspring/boot:BeanDefinitionOverrideFailureAnalyzer'
+#   - '@tspring/boot:BeanNotOfRequiredTypeFailureAnalyzer'
+#   - '@tspring/boot:BindFailureAnalyzer'
+#   - '@tspring/boot:BindValidationFailureAnalyzer'
+#   - '@tspring/boot:UnboundConfigurationPropertyFailureAnalyzer'
+#   - '@tspring/boot:ConnectorStartFailureAnalyzer'
+#   - '@tspring/boot:NoSuchMethodFailureAnalyzer'
+#   - '@tspring/boot:NoUniqueBeanDefinitionFailureAnalyzer'
+#   - '@tspring/boot:PortInUseFailureAnalyzer'
+#   - '@tspring/boot:ValidationExceptionFailureAnalyzer'
+#   - '@tspring/boot:InvalidConfigurationPropertiesFailureAnalyzer'
+#   - '@tspring/boot:InvalidConfigurationPropertyNameFailureAnalyzer'
+#   - '@tspring/boot:InvalidConfigurationPropertyValueFailureAnalyzer'
+
+# FailureAnalysisReporters
+# '@tspring/boot:FailureAnalysisReporter':
+#   - '@tspring/boot:LoggingFailureAnalysisReporter'
